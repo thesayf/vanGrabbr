@@ -1,0 +1,129 @@
+<!--Main contents starts here-->
+<div class="am-content">
+<div class="main-content">
+  <!--+general-chart("classes", "title", "height", "id", "counter value", "counter desc", tools enabled (use true or false))-->
+<div class="row">
+<div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="btn-group btn-hspace">
+              <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Filter By Status <span class="caret"></span></button>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="#">Runnning</a></li>
+                <li><a href="#">Planned</a></li>
+              </ul>
+            </div>
+          <div class="btn-group btn-hspace">
+              <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Filter Project Type <span class="caret"></span></button>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="#">Logistic</a></li>
+                <li><a href="#">Staffing</a></li>
+              </ul>
+            </div>
+          <button data-toggle="modal" data-target="#form-bp1" type="button" class="btn btn-space btn-primary pull-right">Create New Project</button>
+
+        <div class="panel-heading"><span class="panel-title">Projects</span></div>
+        <div class="panel-body">
+          <div class="spacer">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Project Name</th>
+                  <th class="text-center">Project Start Date</th>
+                  <th class="text-center">Project End Date</th>
+                    <th class="text-center">Edit Project</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Default</td>
+                  <td class="text-center">Default</td>
+                  <td class="text-center">Default</td>
+                    <td class="text-center"><a href="#/projectjobpage">Edit Project</a></td>
+                </tr>
+                <tr>
+                  <td>Primary</td>
+                  <td class="text-center">Default</td>
+                  <td class="text-center">Default</td>
+                    <td class="text-center"><a href="#/projectjobpage">Edit Project</a></td>
+                </tr>
+                <tr>
+                  <td>Success</td>
+                  <td class="text-center">Default</td>
+                    <td class="text-center">Default</td>
+                    <td class="text-center"><a href="#/projectjobpage">Edit Project</a></td>
+                </tr>
+                <tr>
+                  <td>Info</td>
+                  <td class="text-center">Default</td>
+                  <td class="text-center">Default</td>
+                    <td class="text-center"><a href="#/projectjobpage">Edit Project</a></td>
+                </tr>
+                <tr>
+                  <td>Warning</td>
+                  <td class="text-center">Default</td>
+                  <td class="text-center">Default</td>
+                    <td class="text-center"><a href="#/projectjobpage">Edit Project</a></td>
+                </tr>
+                <tr>
+                  <td>Danger</td>
+                  <td class="text-center">Default</td>
+                  <td class="text-center">Default</td>
+                    <td class="text-center"><a href="#/projectjobage">Edit Project</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+    </div>
+</div>
+<!--Main contents ends here-->
+
+<!-- Inventory Modal starts here-->
+
+<div id="form-bp1" tabindex="-1" role="dialog" class="modal fade colored-header">
+<div class="modal-dialog custom-width">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close"><i class="icon s7-close"></i></button>
+    <h3 class="modal-title">Form Modal</h3>
+  </div>
+  <div class="modal-body form">
+    <div class="form-group">
+      <label>Project Name</label>
+      <input type="name" placeholder="Choose Project Name" class="form-control">
+    </div>
+    <div class="form-group">
+      <label class="col-sm-3 control-label">Start Date</label>
+              <div class="col-sm-9">
+                <div data-min-view="2" data-date-format="yyyy-mm-dd" class="input-group date datetimepicker col-md-5 col-xs-7">
+                  <input size="16" type="text" value="" class="form-control"><span class="input-group-addon btn btn-primary"><i class="icon-th s7-date"></i></span>
+                </div>
+              </div>
+    </div>
+      <br>
+    <div class="form-group">
+      <label class="col-sm-3 control-label">End Date</label>
+              <div class="col-sm-9">
+                <div data-min-view="2" data-date-format="yyyy-mm-dd" class="input-group date datetimepicker col-md-5 col-xs-7">
+                  <input size="16" type="text" value="" class="form-control"><span class="input-group-addon btn btn-primary"><i class="icon-th s7-date"></i></span>
+                </div>
+              </div>
+    </div>
+  </div>
+    <br>
+    <br>
+    <br>
+    <br>
+  <div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn btn-default md-close">Cancel</button>
+    <button type="button" data-dismiss="modal" class="btn btn-primary md-close">Proceed</button>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Inventory Modal Ends Here-->

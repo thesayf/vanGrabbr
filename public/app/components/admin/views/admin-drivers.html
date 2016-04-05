@@ -1,0 +1,153 @@
+ <div class="am-content">
+        <div class="main-content">
+ <div class="row">
+            <div class="col-sm-12">
+              <div class="widget widget-fullwidth widget-small">
+                <div class="widget-head">
+                  <div class="tools"><span class="icon s7-upload"></span><span class="icon s7-edit"></span><span class="icon s7-close"></span></div>
+                  <div class="title">Drivers</div>
+                </div>
+               <div class="input-group col-md-4 col-md-offset-6">
+                          <span class="input-group-addon" id="basic-addon1">Find User</span>
+                          <input ng-model="searchText" type="text" class="form-control" placeholder="user" aria-describedby="basic-addon1">
+                </div>
+                <table id="table1" class="table table-striped table-hover table-fw-widget">
+                  <thead>
+                    <tr>
+                      <th>Driver Name</th>
+                      <th>Vehicle</th>
+                      <th>Porters</th>
+                      <th>Number</th>
+                      <th>View more</th>
+                        <th>Checks</th>
+                        <th>Activate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="odd gradeX" ng-repeat="dd in drivers | filter:searchText">
+                      <td>{{dd.firstname}}</td>
+                      <td>{{dd.vehicle}}</td>
+                      <td>{{dd.porters}}</td>
+                      <td class="center">{{dd.mobile}}</td>
+                      <td class="center"><button ng-click="displayOneDriver(dd._id)" data-toggle="modal" data-target="#form-bp1" type="button" class="">View</button></td>
+                        <td class="center"><button data-toggle="modal" data-target="#md-default" type="button" class="">Checks</button></td>
+                        <td class="center"><button>activate</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+<div id="form-bp1" tabindex="-1" role="dialog" class="modal fade colored-header">
+              <div class="modal-dialog custom-width">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close"><i class="icon s7-close"></i></button>
+                    <h3 class="modal-title">Set Dates</h3>
+                  </div>
+                  <div class="modal-body form">
+            <div class="form-group">
+              <div class="user-profile col-md-12 col-sm-12">
+                <div class=" info-block panel panel-default">
+                  <div class="panel-heading">
+                    <h4>Piping Project</h4>
+                  </div>
+                    <table class="no-border no-strip skills">
+                      <tbody class="no-border-x no-border-y">
+                        <tr>
+                          <td class="item">Username<span class="icon s7-user"></span></td>
+                          <td>{{username}}</td>
+                        </tr>
+                        <tr>
+                          <td class="item">Email<span class="icon s7-mail"></span></td>
+                          <td>{{email}}</td>
+                        </tr>
+                        <tr>
+                          <td class="item">D.O.B<span class="icon s7-gift"></span></td>
+                          <td>{{day}}/{{month}}/{{year}}</td>
+                        </tr>
+                        <tr>
+                          <td class="item">Address<span class="icon s7-map-marker"></span></td>
+                          <td>{{address}} {{city}} {{postcode}}</td>
+                        </tr>
+                        <tr>
+                          <td class="item">Vehicle Reg:<span class="icon s7-car"></span></td>
+                          <td>{{reg}}</td>
+                        </tr>
+                        <tr>
+                          <td class="item">Bank Account:<span class="icon s7-safe"></span></td>
+                          <td>{{bank}}.{{acc}}.{{sc}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                  </div>
+                    <br>
+                    <br>
+                    <br>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default md-close">Cancel</button>
+                    <button type="button" data-dismiss="modal" class="btn btn-primary md-close">Proceed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+</div>
+
+<div id="md-default" tabindex="-1" role="dialog" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="user-profile col-md-12 col-sm-12">
+                <div class=" info-block panel panel-default">
+                  <div class="panel-heading">
+                    <h4>Driver Checks</h4>
+                  </div>
+                    <table class="no-border no-strip skills">
+                      <tbody class="no-border-x no-border-y">
+                        <tr>
+                          <td class="item">Driving license<span class="icon s7-id"></span></td>
+                          <td><div class="col-sm-6 xs-pt-5">
+                        <div class="switch-button switch-button-success">
+                          <input type="checkbox" checked="" name="swt5" id="swt5"><span>
+                            <label for="swt5"></label></span>
+                        </div>
+                      </div></td>
+                        </tr>
+                        <tr>
+                          <td class="item">MOT<span class="icon s7-car"></span></td>
+                          <td><div class="col-sm-6 xs-pt-5">
+                        <div class="switch-button switch-button-success">
+                          <input type="checkbox" checked="" name="swt5" id="swt5"><span>
+                            <label for="swt5"></label></span>
+                        </div>
+                      </div></td>
+                        </tr>
+                        <tr>
+                          <td class="item">Insrance<span class="icon s7-umbrella"></span></td>
+                          <td><div class="col-sm-6 xs-pt-5">
+                        <div class="switch-button switch-button-success">
+                          <input type="checkbox" checked="" name="swt5" id="swt5"><span>
+                            <label for="swt5"></label></span>
+                        </div>
+                      </div></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+                <button type="button" data-dismiss="modal" class="btn btn-primary">Proceed</button>
+            </div>
+        </div>
+    </div>
+</div>

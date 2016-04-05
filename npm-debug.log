@@ -1,0 +1,609 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   'mcrypt',
+1 verbose cli   '--save' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.1
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 warn package.json moverspro@0.1.4 No README data
+6 warn package.json uid2@0.0.3 No repository field.
+7 silly cache add args [ 'mcrypt', null ]
+8 verbose cache add spec mcrypt
+9 silly cache add parsed spec { raw: 'mcrypt',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'mcrypt',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 verbose addNamed mcrypt@*
+11 silly addNamed semver.valid null
+12 silly addNamed semver.validRange *
+13 silly addNameRange { name: 'mcrypt', range: '*', hasData: false }
+14 silly mapToRegistry name mcrypt
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/mcrypt
+18 verbose addNameRange registry:https://registry.npmjs.org/mcrypt not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/mcrypt
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 5:37:54 PM
+22 verbose request id 614fa9e9af143649
+23 verbose etag "7Q20KBUHYNLDGLN25NIKCE0GQ"
+24 http request GET https://registry.npmjs.org/mcrypt
+25 http 304 https://registry.npmjs.org/mcrypt
+26 silly get cb [ 304,
+26 silly get   { date: 'Sat, 02 Apr 2016 16:37:56 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"7Q20KBUHYNLDGLN25NIKCE0GQ"',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-lhr6329-LHR',
+26 silly get     'x-cache': 'MISS',
+26 silly get     'x-cache-hits': '0',
+26 silly get     'x-timer': 'S1459615076.738970,VS0,VE171',
+26 silly get     vary: 'Accept' } ]
+27 verbose etag https://registry.npmjs.org/mcrypt from cache
+28 verbose get saving mcrypt to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\mcrypt\.cache.json
+29 silly addNameRange number 2 { name: 'mcrypt', range: '*', hasData: true }
+30 silly addNameRange versions [ 'mcrypt',
+30 silly addNameRange   [ '0.0.1',
+30 silly addNameRange     '0.0.2',
+30 silly addNameRange     '0.0.3',
+30 silly addNameRange     '0.0.4',
+30 silly addNameRange     '0.0.5',
+30 silly addNameRange     '0.0.6',
+30 silly addNameRange     '0.0.7',
+30 silly addNameRange     '0.0.8',
+30 silly addNameRange     '0.0.11',
+30 silly addNameRange     '0.0.13',
+30 silly addNameRange     '0.0.14',
+30 silly addNameRange     '0.0.15',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.1.2',
+30 silly addNameRange     '0.1.3',
+30 silly addNameRange     '0.1.5',
+30 silly addNameRange     '0.1.6',
+30 silly addNameRange     '0.1.7',
+30 silly addNameRange     '0.1.8',
+30 silly addNameRange     '0.1.9',
+30 silly addNameRange     '0.1.10' ] ]
+31 verbose addNamed mcrypt@0.1.10
+32 silly addNamed semver.valid 0.1.10
+33 silly addNamed semver.validRange 0.1.10
+34 silly cache afterAdd mcrypt@0.1.10
+35 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\mcrypt\0.1.10\package\package.json not in flight; writing
+36 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\mcrypt\0.1.10\package\package.json written
+37 silly install resolved [ { name: 'mcrypt',
+37 silly install resolved     version: '0.1.10',
+37 silly install resolved     description: 'MCrypt bindings',
+37 silly install resolved     keywords: [ 'mcrypt', 'crypto' ],
+37 silly install resolved     homepage: 'https://github.com/tugrul/node-mcrypt',
+37 silly install resolved     author: { name: 'Tuğrul Topuz', email: 'tugrultopuz@gmail.com' },
+37 silly install resolved     bugs: { url: 'https://github.com/tugrul/node-mcrypt/issues' },
+37 silly install resolved     license: 'MIT',
+37 silly install resolved     repository:
+37 silly install resolved      { type: 'git',
+37 silly install resolved        url: 'https://github.com/tugrul/node-mcrypt.git' },
+37 silly install resolved     scripts: { test: 'mocha', install: 'node-gyp rebuild --release' },
+37 silly install resolved     engines: { node: '>=0.10.16' },
+37 silly install resolved     dependencies: { nan: '^2.1.0' },
+37 silly install resolved     devDependencies: { mocha: '^2.3.3', 'node-gyp': '*' },
+37 silly install resolved     main: './build/Release/mcrypt',
+37 silly install resolved     gitHead: '8e828ab72cbc98c47cf2e155b55bd1c10a8b1786',
+37 silly install resolved     _id: 'mcrypt@0.1.10',
+37 silly install resolved     _shasum: 'c42224cb0cb4e5a248df2c7c328b80dbf34745d2',
+37 silly install resolved     _from: 'mcrypt@*',
+37 silly install resolved     _npmVersion: '1.4.14',
+37 silly install resolved     _npmUser: { name: 'tugrul', email: 'tugrultopuz@gmail.com' },
+37 silly install resolved     maintainers: [ [Object] ],
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: 'c42224cb0cb4e5a248df2c7c328b80dbf34745d2',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/mcrypt/-/mcrypt-0.1.10.tgz' },
+37 silly install resolved     directories: {},
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/mcrypt/-/mcrypt-0.1.10.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install mcrypt@0.1.10 into C:\Users\admin\Desktop\git\vg
+39 info installOne mcrypt@0.1.10
+40 verbose installOne of mcrypt to C:\Users\admin\Desktop\git\vg not in flight; installing
+41 verbose lock using C:\Users\admin\AppData\Roaming\npm-cache\_locks\mcrypt-8f51bf425020877a.lock for C:\Users\admin\Desktop\git\vg\node_modules\mcrypt
+42 silly install write writing mcrypt 0.1.10 to C:\Users\admin\Desktop\git\vg\node_modules\mcrypt
+43 silly cache addNamed cb mcrypt@0.1.10
+44 verbose unbuild node_modules\mcrypt
+45 verbose gentlyRm vacuuming C:\Users\admin\Desktop\git\vg\node_modules\mcrypt
+46 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\mcrypt\0.1.10\package.tgz
+47 verbose tar unpacking to C:\Users\admin\Desktop\git\vg\node_modules\mcrypt
+48 verbose gentlyRm vacuuming C:\Users\admin\Desktop\git\vg\node_modules\mcrypt
+49 silly gunzTarPerm modes [ '777', '666' ]
+50 silly gunzTarPerm extractEntry package.json
+51 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+52 silly gunzTarPerm extractEntry .npmignore
+53 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+54 silly gunzTarPerm extractEntry README.md
+55 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+56 silly gunzTarPerm extractEntry LICENSE
+57 silly gunzTarPerm modified mode [ 'LICENSE', 493, 511 ]
+58 silly gunzTarPerm extractEntry index.js
+59 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+60 silly gunzTarPerm extractEntry .gitmodules
+61 silly gunzTarPerm modified mode [ '.gitmodules', 420, 438 ]
+62 silly gunzTarPerm extractEntry .travis.yml
+63 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+64 silly gunzTarPerm extractEntry lib/libmcrypt/README
+65 silly gunzTarPerm modified mode [ 'lib/libmcrypt/README', 420, 438 ]
+66 silly gunzTarPerm extractEntry lib/libmcrypt/AUTHORS
+67 silly gunzTarPerm modified mode [ 'lib/libmcrypt/AUTHORS', 420, 438 ]
+68 silly gunzTarPerm extractEntry lib/libmcrypt/COPYING.LIB
+69 silly gunzTarPerm modified mode [ 'lib/libmcrypt/COPYING.LIB', 420, 438 ]
+70 silly gunzTarPerm extractEntry lib/libmcrypt/KNOWN-BUGS
+71 silly gunzTarPerm modified mode [ 'lib/libmcrypt/KNOWN-BUGS', 420, 438 ]
+72 silly gunzTarPerm extractEntry lib/libmcrypt/THANKS
+73 silly gunzTarPerm modified mode [ 'lib/libmcrypt/THANKS', 420, 438 ]
+74 silly gunzTarPerm extractEntry lib/libmcrypt/config.h
+75 silly gunzTarPerm modified mode [ 'lib/libmcrypt/config.h', 420, 438 ]
+76 silly gunzTarPerm extractEntry lib/libmcrypt/include/mcrypt.h
+77 silly gunzTarPerm modified mode [ 'lib/libmcrypt/include/mcrypt.h', 420, 438 ]
+78 silly gunzTarPerm extractEntry lib/libmcrypt/include/mutils/mcrypt.h
+79 silly gunzTarPerm modified mode [ 'lib/libmcrypt/include/mutils/mcrypt.h', 420, 438 ]
+80 silly gunzTarPerm extractEntry lib/libmcrypt/lib/mcrypt_internal.h
+81 silly gunzTarPerm modified mode [ 'lib/libmcrypt/lib/mcrypt_internal.h', 420, 438 ]
+82 silly gunzTarPerm extractEntry lib/libmcrypt/lib/bzero.c
+83 silly gunzTarPerm modified mode [ 'lib/libmcrypt/lib/bzero.c', 420, 438 ]
+84 silly gunzTarPerm extractEntry lib/libmcrypt/lib/libdefs.h
+85 silly gunzTarPerm modified mode [ 'lib/libmcrypt/lib/libdefs.h', 420, 438 ]
+86 silly gunzTarPerm extractEntry lib/libmcrypt/lib/mcrypt.c
+87 silly gunzTarPerm modified mode [ 'lib/libmcrypt/lib/mcrypt.c', 420, 438 ]
+88 silly gunzTarPerm extractEntry lib/libmcrypt/lib/mcrypt_extra.c
+89 silly gunzTarPerm modified mode [ 'lib/libmcrypt/lib/mcrypt_extra.c', 420, 438 ]
+90 silly gunzTarPerm extractEntry lib/libmcrypt/lib/bzero.h
+91 silly gunzTarPerm modified mode [ 'lib/libmcrypt/lib/bzero.h', 420, 438 ]
+92 silly gunzTarPerm extractEntry lib/libmcrypt/lib/mcrypt_modules.c
+93 silly gunzTarPerm modified mode [ 'lib/libmcrypt/lib/mcrypt_modules.c', 420, 438 ]
+94 silly gunzTarPerm extractEntry lib/libmcrypt/lib/mcrypt_modules.h
+95 silly gunzTarPerm modified mode [ 'lib/libmcrypt/lib/mcrypt_modules.h', 420, 438 ]
+96 silly gunzTarPerm extractEntry lib/libmcrypt/lib/mcrypt_symb.c
+97 silly gunzTarPerm modified mode [ 'lib/libmcrypt/lib/mcrypt_symb.c', 420, 438 ]
+98 silly gunzTarPerm extractEntry lib/libmcrypt/lib/xmemory.c
+99 silly gunzTarPerm modified mode [ 'lib/libmcrypt/lib/xmemory.c', 420, 438 ]
+100 silly gunzTarPerm extractEntry lib/libmcrypt/lib/xmemory.h
+101 silly gunzTarPerm modified mode [ 'lib/libmcrypt/lib/xmemory.h', 420, 438 ]
+102 silly gunzTarPerm extractEntry lib/libmcrypt/libmcrypt.gyp
+103 silly gunzTarPerm modified mode [ 'lib/libmcrypt/libmcrypt.gyp', 420, 438 ]
+104 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/rc2.c
+105 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/rc2.c', 420, 438 ]
+106 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/3-way.c
+107 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/3-way.c', 420, 438 ]
+108 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/arcfour.c
+109 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/arcfour.c', 420, 438 ]
+110 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/arcfour.h
+111 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/arcfour.h', 420, 438 ]
+112 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/blowfish-compat.c
+113 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/blowfish-compat.c',
+113 silly gunzTarPerm   420,
+113 silly gunzTarPerm   438 ]
+114 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/blowfish.c
+115 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/blowfish.c', 420, 438 ]
+116 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/blowfish.h
+117 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/blowfish.h', 420, 438 ]
+118 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/cast-128.c
+119 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/cast-128.c', 420, 438 ]
+120 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/cast-128.h
+121 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/cast-128.h', 420, 438 ]
+122 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/cast-128_sboxes.h
+123 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/cast-128_sboxes.h',
+123 silly gunzTarPerm   420,
+123 silly gunzTarPerm   438 ]
+124 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/cast-256.c
+125 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/cast-256.c', 420, 438 ]
+126 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/cast-256.h
+127 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/cast-256.h', 420, 438 ]
+128 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/des.c
+129 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/des.c', 420, 438 ]
+130 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/des.h
+131 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/des.h', 420, 438 ]
+132 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/enigma.c
+133 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/enigma.c', 420, 438 ]
+134 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/enigma.h
+135 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/enigma.h', 420, 438 ]
+136 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/gost.c
+137 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/gost.c', 420, 438 ]
+138 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/loki97.c
+139 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/loki97.c', 420, 438 ]
+140 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/panama.c
+141 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/panama.c', 420, 438 ]
+142 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/panama.h
+143 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/panama.h', 420, 438 ]
+144 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/3-way.h
+145 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/3-way.h', 420, 438 ]
+146 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/rc2.h
+147 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/rc2.h', 420, 438 ]
+148 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/rijndael-128.c
+149 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/rijndael-128.c', 420, 438 ]
+150 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/rijndael-192.c
+151 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/rijndael-192.c', 420, 438 ]
+152 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/rijndael-256.c
+153 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/rijndael-256.c', 420, 438 ]
+154 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/rijndael.h
+155 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/rijndael.h', 420, 438 ]
+156 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/safer.h
+157 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/safer.h', 420, 438 ]
+158 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/safer128.c
+159 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/safer128.c', 420, 438 ]
+160 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/safer64.c
+161 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/safer64.c', 420, 438 ]
+162 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/saferplus.c
+163 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/saferplus.c', 420, 438 ]
+164 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/saferplus.h
+165 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/saferplus.h', 420, 438 ]
+166 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/serpent.c
+167 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/serpent.c', 420, 438 ]
+168 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/serpent.h
+169 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/serpent.h', 420, 438 ]
+170 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/tripledes.c
+171 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/tripledes.c', 420, 438 ]
+172 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/tripledes.h
+173 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/tripledes.h', 420, 438 ]
+174 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/twofish.c
+175 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/twofish.c', 420, 438 ]
+176 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/twofish.h
+177 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/twofish.h', 420, 438 ]
+178 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/wake.c
+179 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/wake.c', 420, 438 ]
+180 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/wake.h
+181 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/wake.h', 420, 438 ]
+182 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/xtea.c
+183 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/xtea.c', 420, 438 ]
+184 silly gunzTarPerm extractEntry lib/libmcrypt/modules/algorithms/xtea.h
+185 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/algorithms/xtea.h', 420, 438 ]
+186 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/ncfb.c
+187 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/ncfb.c', 420, 438 ]
+188 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/cbc.c
+189 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/cbc.c', 420, 438 ]
+190 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/cfb.c
+191 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/cfb.c', 420, 438 ]
+192 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/cfb.h
+193 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/cfb.h', 420, 438 ]
+194 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/ctr.c
+195 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/ctr.c', 420, 438 ]
+196 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/ctr.h
+197 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/ctr.h', 420, 438 ]
+198 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/ecb.c
+199 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/ecb.c', 420, 438 ]
+200 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/ecb.h
+201 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/ecb.h', 420, 438 ]
+202 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/cbc.h
+203 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/cbc.h', 420, 438 ]
+204 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/ncfb.h
+205 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/ncfb.h', 420, 438 ]
+206 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/nofb.c
+207 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/nofb.c', 420, 438 ]
+208 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/nofb.h
+209 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/nofb.h', 420, 438 ]
+210 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/ofb.c
+211 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/ofb.c', 420, 438 ]
+212 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/ofb.h
+213 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/ofb.h', 420, 438 ]
+214 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/stream.c
+215 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/stream.c', 420, 438 ]
+216 silly gunzTarPerm extractEntry lib/libmcrypt/modules/modes/stream.h
+217 silly gunzTarPerm modified mode [ 'lib/libmcrypt/modules/modes/stream.h', 420, 438 ]
+218 silly gunzTarPerm extractEntry src/mcrypt.cc
+219 silly gunzTarPerm modified mode [ 'src/mcrypt.cc', 420, 438 ]
+220 silly gunzTarPerm extractEntry src/mcrypt.h
+221 silly gunzTarPerm modified mode [ 'src/mcrypt.h', 420, 438 ]
+222 silly gunzTarPerm extractEntry binding.gyp
+223 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+224 silly gunzTarPerm extractEntry test/main.js
+225 silly gunzTarPerm modified mode [ 'test/main.js', 420, 438 ]
+226 silly gunzTarPerm extractEntry test/rijndael-256-cbc.js
+227 silly gunzTarPerm modified mode [ 'test/rijndael-256-cbc.js', 420, 438 ]
+228 info preinstall mcrypt@0.1.10
+229 silly prepareForInstallMany adding nan@^2.1.0 from mcrypt dependencies
+230 silly cache add args [ 'nan@^2.1.0', null ]
+231 verbose cache add spec nan@^2.1.0
+232 silly cache add parsed spec { raw: 'nan@^2.1.0',
+232 silly cache add   scope: null,
+232 silly cache add   name: 'nan',
+232 silly cache add   rawSpec: '^2.1.0',
+232 silly cache add   spec: '>=2.1.0 <3.0.0',
+232 silly cache add   type: 'range' }
+233 verbose addNamed nan@>=2.1.0 <3.0.0
+234 silly addNamed semver.valid null
+235 silly addNamed semver.validRange >=2.1.0 <3.0.0
+236 silly addNameRange { name: 'nan', range: '>=2.1.0 <3.0.0', hasData: false }
+237 silly mapToRegistry name nan
+238 silly mapToRegistry using default registry
+239 silly mapToRegistry registry https://registry.npmjs.org/
+240 silly mapToRegistry uri https://registry.npmjs.org/nan
+241 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+242 verbose request uri https://registry.npmjs.org/nan
+243 verbose request no auth needed
+244 info attempt registry request try #1 at 5:37:55 PM
+245 verbose etag "2UZKQOUIL0TMX4WY7FZ5Q5HJQ"
+246 http request GET https://registry.npmjs.org/nan
+247 http 304 https://registry.npmjs.org/nan
+248 silly get cb [ 304,
+248 silly get   { date: 'Sat, 02 Apr 2016 16:37:57 GMT',
+248 silly get     via: '1.1 varnish',
+248 silly get     'cache-control': 'max-age=300',
+248 silly get     etag: '"2UZKQOUIL0TMX4WY7FZ5Q5HJQ"',
+248 silly get     age: '157',
+248 silly get     connection: 'keep-alive',
+248 silly get     'x-served-by': 'cache-lhr6331-LHR',
+248 silly get     'x-cache': 'HIT',
+248 silly get     'x-cache-hits': '1',
+248 silly get     'x-timer': 'S1459615077.659000,VS0,VE0',
+248 silly get     vary: 'Accept' } ]
+249 verbose etag https://registry.npmjs.org/nan from cache
+250 verbose get saving nan to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+251 silly addNameRange number 2 { name: 'nan', range: '>=2.1.0 <3.0.0', hasData: true }
+252 silly addNameRange versions [ 'nan',
+252 silly addNameRange   [ '0.3.0-wip',
+252 silly addNameRange     '0.3.0-wip2',
+252 silly addNameRange     '0.3.0',
+252 silly addNameRange     '0.3.1',
+252 silly addNameRange     '0.3.2',
+252 silly addNameRange     '0.4.0',
+252 silly addNameRange     '0.4.1',
+252 silly addNameRange     '0.4.2',
+252 silly addNameRange     '0.4.3',
+252 silly addNameRange     '0.4.4',
+252 silly addNameRange     '0.5.0',
+252 silly addNameRange     '0.5.1',
+252 silly addNameRange     '0.5.2',
+252 silly addNameRange     '0.6.0',
+252 silly addNameRange     '0.7.0',
+252 silly addNameRange     '0.7.1',
+252 silly addNameRange     '0.8.0',
+252 silly addNameRange     '1.0.0',
+252 silly addNameRange     '1.1.0',
+252 silly addNameRange     '1.1.1',
+252 silly addNameRange     '1.1.2',
+252 silly addNameRange     '1.2.0',
+252 silly addNameRange     '1.3.0',
+252 silly addNameRange     '1.4.0',
+252 silly addNameRange     '1.4.1',
+252 silly addNameRange     '1.5.0',
+252 silly addNameRange     '1.4.2',
+252 silly addNameRange     '1.4.3',
+252 silly addNameRange     '1.5.1',
+252 silly addNameRange     '1.5.2',
+252 silly addNameRange     '1.6.0',
+252 silly addNameRange     '1.5.3',
+252 silly addNameRange     '1.6.1',
+252 silly addNameRange     '1.6.2',
+252 silly addNameRange     '1.7.0',
+252 silly addNameRange     '1.8.0',
+252 silly addNameRange     '1.8.1',
+252 silly addNameRange     '1.8.2',
+252 silly addNameRange     '1.8.3',
+252 silly addNameRange     '1.8.4',
+252 silly addNameRange     '1.9.0',
+252 silly addNameRange     '2.0.0',
+252 silly addNameRange     '2.0.1',
+252 silly addNameRange     '2.0.2',
+252 silly addNameRange     '2.0.3',
+252 silly addNameRange     '2.0.4',
+252 silly addNameRange     '2.0.5',
+252 silly addNameRange     '2.0.6',
+252 silly addNameRange     '2.0.7',
+252 silly addNameRange     '2.0.8',
+252 silly addNameRange     '2.0.9',
+252 silly addNameRange     '2.1.0',
+252 silly addNameRange     '2.2.0',
+252 silly addNameRange     '2.2.1' ] ]
+253 verbose addNamed nan@2.2.1
+254 silly addNamed semver.valid 2.2.1
+255 silly addNamed semver.validRange 2.2.1
+256 silly cache afterAdd nan@2.2.1
+257 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\nan\2.2.1\package\package.json not in flight; writing
+258 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\nan\2.2.1\package\package.json written
+259 silly install resolved [ { name: 'nan',
+259 silly install resolved     version: '2.2.1',
+259 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 4 compatibility',
+259 silly install resolved     main: 'include_dirs.js',
+259 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+259 silly install resolved     scripts:
+259 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+259 silly install resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+259 silly install resolved        docs: 'doc/.build.sh' },
+259 silly install resolved     contributors:
+259 silly install resolved      [ [Object],
+259 silly install resolved        [Object],
+259 silly install resolved        [Object],
+259 silly install resolved        [Object],
+259 silly install resolved        [Object],
+259 silly install resolved        [Object],
+259 silly install resolved        [Object] ],
+259 silly install resolved     devDependencies:
+259 silly install resolved      { bindings: '~1.2.1',
+259 silly install resolved        commander: '^2.8.1',
+259 silly install resolved        glob: '^5.0.14',
+259 silly install resolved        'node-gyp': '~3.0.1',
+259 silly install resolved        tap: '~0.7.1',
+259 silly install resolved        xtend: '~4.0.0' },
+259 silly install resolved     license: 'MIT',
+259 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+259 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+259 silly install resolved     _id: 'nan@2.2.1',
+259 silly install resolved     _shasum: 'd68693f6b34bb41d66bc68b3a4f9defc79d7149b',
+259 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.2.1.tgz',
+259 silly install resolved     _from: 'nan@>=2.1.0 <3.0.0',
+259 silly install resolved     _npmVersion: '3.3.6',
+259 silly install resolved     _nodeVersion: '5.0.0',
+259 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+259 silly install resolved     dist:
+259 silly install resolved      { shasum: 'd68693f6b34bb41d66bc68b3a4f9defc79d7149b',
+259 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-2.2.1.tgz' },
+259 silly install resolved     maintainers: [ [Object], [Object] ],
+259 silly install resolved     _npmOperationalInternal:
+259 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+259 silly install resolved        tmp: 'tmp/nan-2.2.1.tgz_1459265439909_0.12396649201400578' },
+259 silly install resolved     directories: {},
+259 silly install resolved     readme: 'ERROR: No README data found!' } ]
+260 info install nan@2.2.1 into C:\Users\admin\Desktop\git\vg\node_modules\mcrypt
+261 info installOne nan@2.2.1
+262 verbose installOne of nan to C:\Users\admin\Desktop\git\vg\node_modules\mcrypt not in flight; installing
+263 verbose lock using C:\Users\admin\AppData\Roaming\npm-cache\_locks\nan-476159e29c1bdf2c.lock for C:\Users\admin\Desktop\git\vg\node_modules\mcrypt\node_modules\nan
+264 silly install write writing nan 2.2.1 to C:\Users\admin\Desktop\git\vg\node_modules\mcrypt\node_modules\nan
+265 silly cache addNamed cb nan@2.2.1
+266 verbose unbuild node_modules\mcrypt\node_modules\nan
+267 verbose gentlyRm vacuuming C:\Users\admin\Desktop\git\vg\node_modules\mcrypt\node_modules\nan
+268 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\nan\2.2.1\package.tgz
+269 verbose tar unpacking to C:\Users\admin\Desktop\git\vg\node_modules\mcrypt\node_modules\nan
+270 verbose gentlyRm vacuuming C:\Users\admin\Desktop\git\vg\node_modules\mcrypt\node_modules\nan
+271 silly gunzTarPerm modes [ '777', '666' ]
+272 silly gunzTarPerm extractEntry package.json
+273 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+274 silly gunzTarPerm extractEntry include_dirs.js
+275 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+276 silly gunzTarPerm extractEntry nan_converters.h
+277 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+278 silly gunzTarPerm extractEntry LICENSE.md
+279 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+280 silly gunzTarPerm extractEntry .dntrc
+281 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
+282 silly gunzTarPerm extractEntry appveyor.yml
+283 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
+284 silly gunzTarPerm extractEntry doc/new.md
+285 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+286 silly gunzTarPerm extractEntry doc/.build.sh
+287 silly gunzTarPerm modified mode [ 'doc/.build.sh', 509, 511 ]
+288 silly gunzTarPerm extractEntry doc/buffers.md
+289 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+290 silly gunzTarPerm extractEntry doc/callback.md
+291 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+292 silly gunzTarPerm extractEntry doc/converters.md
+293 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+294 silly gunzTarPerm extractEntry doc/errors.md
+295 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+296 silly gunzTarPerm extractEntry doc/maybe_types.md
+297 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+298 silly gunzTarPerm extractEntry doc/methods.md
+299 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+300 silly gunzTarPerm extractEntry doc/asyncworker.md
+301 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+302 silly gunzTarPerm extractEntry doc/node_misc.md
+303 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+304 silly gunzTarPerm extractEntry doc/object_wrappers.md
+305 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 438 ]
+306 silly gunzTarPerm extractEntry doc/persistent.md
+307 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+308 silly gunzTarPerm extractEntry doc/scopes.md
+309 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+310 silly gunzTarPerm extractEntry doc/script.md
+311 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+312 silly gunzTarPerm extractEntry doc/string_bytes.md
+313 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+314 silly gunzTarPerm extractEntry doc/v8_internals.md
+315 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+316 silly gunzTarPerm extractEntry doc/v8_misc.md
+317 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+318 silly gunzTarPerm extractEntry nan.h
+319 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+320 silly gunzTarPerm extractEntry nan_callbacks.h
+321 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+322 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+323 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+324 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+325 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+326 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+327 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+328 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+329 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+330 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+331 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+332 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+333 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+334 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+335 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+336 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+337 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+338 silly gunzTarPerm extractEntry nan_new.h
+339 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+340 silly gunzTarPerm extractEntry nan_object_wrap.h
+341 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+342 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+343 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+344 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+345 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+346 silly gunzTarPerm extractEntry nan_string_bytes.h
+347 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+348 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+349 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 438 ]
+350 silly gunzTarPerm extractEntry nan_weak.h
+351 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+352 silly gunzTarPerm extractEntry CHANGELOG.md
+353 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+354 silly gunzTarPerm extractEntry tools/package.json
+355 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+356 silly gunzTarPerm extractEntry tools/README.md
+357 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+358 silly gunzTarPerm extractEntry tools/1to2.js
+359 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+360 info preinstall nan@2.2.1
+361 silly install resolved []
+362 verbose about to build C:\Users\admin\Desktop\git\vg\node_modules\mcrypt\node_modules\nan
+363 info build C:\Users\admin\Desktop\git\vg\node_modules\mcrypt\node_modules\nan
+364 verbose linkStuff [ false,
+364 verbose linkStuff   false,
+364 verbose linkStuff   false,
+364 verbose linkStuff   'C:\\Users\\admin\\Desktop\\git\\vg\\node_modules\\mcrypt\\node_modules' ]
+365 info linkStuff nan@2.2.1
+366 verbose linkBins nan@2.2.1
+367 verbose linkMans nan@2.2.1
+368 verbose rebuildBundles nan@2.2.1
+369 info install nan@2.2.1
+370 info postinstall nan@2.2.1
+371 verbose unlock done using C:\Users\admin\AppData\Roaming\npm-cache\_locks\nan-476159e29c1bdf2c.lock for C:\Users\admin\Desktop\git\vg\node_modules\mcrypt\node_modules\nan
+372 verbose about to build C:\Users\admin\Desktop\git\vg\node_modules\mcrypt
+373 info build C:\Users\admin\Desktop\git\vg\node_modules\mcrypt
+374 verbose linkStuff [ false,
+374 verbose linkStuff   false,
+374 verbose linkStuff   false,
+374 verbose linkStuff   'C:\\Users\\admin\\Desktop\\git\\vg\\node_modules' ]
+375 info linkStuff mcrypt@0.1.10
+376 verbose linkBins mcrypt@0.1.10
+377 verbose linkMans mcrypt@0.1.10
+378 verbose rebuildBundles mcrypt@0.1.10
+379 verbose rebuildBundles [ 'nan' ]
+380 info install mcrypt@0.1.10
+381 verbose unsafe-perm in lifecycle true
+382 info mcrypt@0.1.10 Failed to exec install script
+383 verbose unlock done using C:\Users\admin\AppData\Roaming\npm-cache\_locks\mcrypt-8f51bf425020877a.lock for C:\Users\admin\Desktop\git\vg\node_modules\mcrypt
+384 verbose stack Error: mcrypt@0.1.10 install: `node-gyp rebuild --release`
+384 verbose stack Exit status 1
+384 verbose stack     at EventEmitter.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+384 verbose stack     at EventEmitter.emit (events.js:110:17)
+384 verbose stack     at ChildProcess.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\spawn.js:14:12)
+384 verbose stack     at ChildProcess.emit (events.js:110:17)
+384 verbose stack     at maybeClose (child_process.js:1008:16)
+384 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1080:5)
+385 verbose pkgid mcrypt@0.1.10
+386 verbose cwd C:\Users\admin\Desktop\git\vg
+387 error Windows_NT 6.2.9200
+388 error argv "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i" "mcrypt" "--save"
+389 error node v0.12.1
+390 error npm  v2.5.1
+391 error code ELIFECYCLE
+392 error mcrypt@0.1.10 install: `node-gyp rebuild --release`
+392 error Exit status 1
+393 error Failed at the mcrypt@0.1.10 install script 'node-gyp rebuild --release'.
+393 error This is most likely a problem with the mcrypt package,
+393 error not with npm itself.
+393 error Tell the author that this fails on your system:
+393 error     node-gyp rebuild --release
+393 error You can get their info via:
+393 error     npm owner ls mcrypt
+393 error There is likely additional logging output above.
+394 verbose exit [ 1, true ]
+395 verbose unbuild node_modules\mcrypt
+396 info preuninstall mcrypt@0.1.10
+397 info uninstall mcrypt@0.1.10
+398 verbose unbuild rmStuff mcrypt@0.1.10 from C:\Users\admin\Desktop\git\vg\node_modules
+399 info postuninstall mcrypt@0.1.10
+400 verbose gentlyRm vacuuming C:\Users\admin\Desktop\git\vg\node_modules\mcrypt
+401 silly gentlyRm purging C:\Users\admin\Desktop\git\vg\node_modules\mcrypt
+402 silly gentlyRm quitting because other entries in C:\Users\admin\Desktop\git\vg\node_modules

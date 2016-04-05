@@ -1,0 +1,107 @@
+<!--job details modal ends here-->
+
+<div id="form-bp1" tabindex="-1" role="dialog" class="modal fade">
+    <div class="modal-dialog custom-width">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close"><i class="icon s7-close"></i></button>
+                <h3 class="modal-title">Build Route</h3>
+            </div>
+            <div class="modal-body form">
+                <div class="text-center">
+                          <h4>Add your start and end points here. You may also add additional stops for extra collections and dropoffs by clicking 'add stop' </h4>
+                        </div>
+                <br>
+                <!-- Start of the address -->
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <span class="badge badge-primary">Address 1</span>
+                    </div>
+                    <div class="col-sm-10 col-md-9">
+                        <div class="input-group xs-mb-15 col-md-12">
+                                <input class="form-control" placeholder="Start Address" g-places-autocomplete options="autocompleteOptions" ng-model="address.start_location.name" ng-change="updateMaps()" ng-model-options='{debounce: 1000}' />
+                        </div>
+                    </div>
+                </div>
+                <!-- End of the address-->
+                
+                <!-- Start of the address-->
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <span class="badge badge-primary">Address 2</span>
+                    </div>
+                    <div class="col-sm-10 col-md-9">
+                        <div class="input-group xs-mb-15 col-md-12">
+                            <input class="form-control" placeholder="End Address" g-places-autocomplete options="autocompleteOptions" ng-model="address.end_location.name" ng-change="updateMaps()" ng-model-options='{debounce: 1000}' />
+                        </div>
+                    </div>
+                </div>
+                <!-- End of the address-->
+                
+                <!-- Start of the address-->
+                <div class="form-group hide" data-address-id="2" data-address-type="pick">
+                    <div class="col-md-3">
+                        <span class="badge badge-primary">Address 3</span>
+                    </div>
+                    <div class="col-sm-10 col-md-9">
+                        <div class="input-group xs-mb-15 col-md-12">
+                                <input class="form-control" placeholder="Pickup Address 1" g-places-autocomplete options="autocompleteOptions" ng-model="address.pickup1.name" ng-change="updateMaps()" ng-model-options='{debounce: 1000}' />
+                        </div>
+                    </div>
+                </div>
+                 <!-- End of the address-->
+                
+            <!-- Start of the address-->
+            <div class="form-group hide" data-address-id="2" data-address-type="pick">
+                <div class="col-md-3">
+                        <span class="badge badge-primary">Address 4</span>
+                </div>
+                <div class="col-sm-10 col-md-9">
+                    <div class="input-group xs-mb-15 col-md-12">
+                        <input class="form-control" placeholder="Dropoff Address 1" g-places-autocomplete options="autocompleteOptions" ng-model="address.dropoff1" ng-change="updateMaps()" ng-model-options='{debounce: 1000}' />
+                    </div>
+                </div>
+            </div>
+            <!-- End of the address-->
+            
+            <!-- Start of the address-->
+            <div class="form-group hide" data-address-id="3" data-address-type="pick">
+                <div class="col-sm-9">
+                    <div class="input-group xs-mb-15 col-md-12">
+                            <input class="form-control" placeholder="Pickup Address 2" g-places-autocomplete options="autocompleteOptions" ng-model="address.pickup2" ng-change="updateMaps()" ng-model-options='{debounce: 1000}' />
+                    </div>
+                </div>
+                <div class="btn-group btn-space">
+                        <button data-toggle="modal" data-target="#mod-error" type="button" class="btn btn-space btn-danger"><i class="icon icon-left s7-close-circle"></i>Delete</button>
+                </div>
+            </div>
+            <!-- End of the address-->
+            
+            <!-- Start of the address-->   
+            <div class="form-group hide"  data-address-id="3" data-address-type="pick">
+                <div class="col-sm-9">
+                    <div class="input-group xs-mb-15 col-md-12">
+                        <input class="form-control" placeholder="Dropoff Address 2" g-places-autocomplete options="autocompleteOptions" ng-model="address.dropoff2" ng-change="updateMaps()" ng-model-options='{debounce: 1000}' />
+                    </div>
+                </div>
+                <div class="btn-group btn-space">
+                        <button data-toggle="modal" data-target="#mod-error" type="button" class="btn btn-space btn-danger"><i class="icon icon-left s7-close-circle"></i>Delete</button>
+                </div>
+            </div>
+            <!-- End of the address-->
+                <div class="form-group">
+                    <button type="button" ng-click="showWaypointField('pick')" class="btn btn-primary pull-right btn-space">add stop</button>
+                    <br>
+                    <div class="btn-group btn-space">
+                       </div>
+                </div>
+
+            </div>
+            <!--job details modal ends here-->
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-default md-close">Cancel</button>
+                <button type="button" data-dismiss="modal" class="btn btn-primary md-close">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

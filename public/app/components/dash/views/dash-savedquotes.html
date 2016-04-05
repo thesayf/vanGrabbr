@@ -1,0 +1,316 @@
+<!--Main contents starts here-->
+<div class="am-content">
+<div class="main-content">
+  <!--+general-chart("classes", "title", "height", "id", "counter value", "counter desc", tools enabled (use true or false))-->
+<div class="row">
+<div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="btn-group btn-hspace pull-right">
+              <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Filter By Status <span class="caret"></span></button>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="#">Booked</a></li>
+                <li><a href="#">Saved</a></li>
+              </ul>
+            </div>
+          <div class="btn-group btn-hspace pull-right">
+              <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Filter Job Type <span class="caret"></span></button>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="#">Logistic</a></li>
+              </ul>
+            </div>
+        <div class="panel-heading"><span class="panel-title">Saved Quotes</span></div>
+        <div class="panel-body">
+          <div class="spacer">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Job Name</th>
+                  <th class="text-center">Job type</th>
+                  <th class="text-center">Status</th>
+                    <th class="text-center">Edit Job</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Default</td>
+                  <td class="text-center">Default</td>
+                  <td class="text-center">Default</td>
+                    <td class="text-center">Edit</td>
+                </tr>
+                <tr>
+                  <td>Primary</td>
+                  <td class="text-center">Default</td>
+                  <td class="text-center">Default</td>
+                    <td class="text-center">Edit</td>
+                </tr>
+                <tr>
+                  <td>Success</td>
+                  <td class="text-center">Default</td>
+                  <td class="text-center">Default</td>
+                    <td class="text-center">Edit</td>
+                </tr>
+                <tr>
+                  <td>Info</td>
+                  <td class="text-center">Default</td>
+                  <td class="text-center">Default</td>
+                    <td class="text-center">Edit</td>
+                </tr>
+                <tr>
+                  <td>Warning</td>
+                  <td class="text-center">Default</td>
+                  <td class="text-center">Default</td>
+                    <td class="text-center">Edit</td>
+                </tr>
+                <tr>
+                  <td>Danger</td>
+                  <td class="text-center">Default</td>
+                  <td class="text-center">Default</td>
+                    <td class="text-center">Edit</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+    </div>
+</div>
+<!--Main contents ends here-->
+
+<!--job modal-->
+<div id="md-default" tabindex="-1" role="dialog" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+      <div class="btn-group btn-group-justified"><a href="#" class="btn btn-alt4">Fixed</a><a href="#" class="btn btn-alt4 btn-shade2 btn-rad">Hourly</a></div>
+  </div>
+  <div class="modal-body">
+    <div class="text-center">
+    <div class="row">
+      <input type="email" placeholder="Enter email" class="form-control col-md-12">
+    </div>
+        <br>
+    <div class="row">
+        <button data-toggle="modal" data-target="#inv-fullWidth" type="button" class="btn btn-space btn-primary col-md-12 col-xs-12">Add Items To Delivery</button>
+    </div>
+    <div class="row">
+      <button data-toggle="modal" data-target="#form-bp1" type="button" class="btn btn-space btn-primary col-md-12 col-xs-12">Plan Route</button>
+    </div>
+    <div class="row">
+      <button data-toggle="modal" data-target="#form-bp2" type="button" class="btn btn-space btn-primary col-md-12 col-xs-12">Dates and Times</button>
+    </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+    <button type="button" data-dismiss="modal" class="btn btn-primary">Proceed</button>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Inventory Modal starts here-->
+
+<div id="inv-fullWidth" tabindex="-1" role="dialog" class="modal fade">
+<div class="modal-dialog full-width">
+<div class="modal-content">
+  <div class="modal-header">
+      <!--cancel button starts here-->
+    <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+      <br>
+      <!--cancel button ends here-->
+    <div class="input-group col-md-3 col-sm-4 col-xs-6 pull-right">
+    <input type="text" ng-model="data.searchInput" ng-change="changeActiveRoom('All Items')" class="form-control" placeholder="Search">
+    <span class="input-group-addon hidden-xs" id="basic-addon2">Search</span>
+</div>
+      <button type="button" data-dismiss="modal" class="btn btn-primary pull-right">New Item</button>
+  </div>
+  <div class="modal-body">
+      <br>
+     <div class="btn-group btn-group-justified"><a href="#" class="btn btn-alt4 btn-rad">Boxes pallets & crates</a><a href="#" class="btn btn-alt4">Electronics</a><a href="#" class="btn btn-alt4 btn-shade2 btn-rad">Furniture</a><a href="#" class="btn btn-alt4 btn-rad">Misc</a></div>
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+    <button type="button" data-dismiss="modal" class="btn btn-primary">Proceed</button>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Inventory Modal Ends Here-->
+
+<!--job details modal ends here-->
+
+<div id="form-bp1" tabindex="-1" role="dialog" class="modal fade colored-header">
+<div class="modal-dialog custom-width">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close"><i class="icon s7-close"></i></button>
+    <h3 class="modal-title">Job Details</h3>
+  </div>
+  <div class="modal-body form">
+    <div class="form-group">
+
+        <!-- Start of the address-->
+              <div class="col-sm-6">
+                <div class="input-group xs-mb-15">
+                  <input type="text" class="form-control">
+                  <div class="input-group-btn">
+                    <button tabindex="-1" type="button" class="btn btn-primary">Find Address</button>
+                    <button tabindex="-1" data-toggle="dropdown" type="button" class="btn btn-primary btn-shade1 dropdown-toggle"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+                    <ul role="menu" class="dropdown-menu pull-right">
+                      <li><a href="#">2 dairy farm place</a></li>
+                      <li><a href="#">8 Lombard Road</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">More saved addresses</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        <!-- End of the address-->
+        <!-- start of the floors-->
+        <div class="btn-group btn-space">
+              <button type="button" class="btn btn-default">Distance</button>
+              <button type="button" data-toggle="dropdown" class="btn btn-success dropdown-toggle"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="#">10 meters</a></li>
+                <li><a href="#">20 meters</a></li>
+                <li><a href="#">30 meters</a></li>
+              </ul>
+            </div>
+        <!-- End of the floors-->
+
+        <!-- Start of the Distance-->
+        <div class="btn-group btn-space">
+              <button type="button" class="btn btn-default">Floors</button>
+              <button type="button" data-toggle="dropdown" class="btn btn-success dropdown-toggle"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </ul>
+            </div>
+        <!-- End of the Distance-->
+
+            </div>
+
+      <div class="form-group">
+
+        <!-- Start of the address-->
+              <div class="col-sm-6">
+                <div class="input-group xs-mb-15">
+                  <input type="text" class="form-control">
+                  <div class="input-group-btn">
+                    <button tabindex="-1" type="button" class="btn btn-primary">Find address</button>
+                    <button tabindex="-1" data-toggle="dropdown" type="button" class="btn btn-primary btn-shade1 dropdown-toggle"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+                    <ul role="menu" class="dropdown-menu pull-right">
+                      <li><a href="#">2 dairy farm place</a></li>
+                      <li><a href="#">8 Lombard Road</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">More saved addresses</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        <!-- End of the address-->
+        <!-- start of the floors-->
+        <div class="btn-group btn-space">
+              <button type="button" class="btn btn-default">Distance</button>
+              <button type="button" data-toggle="dropdown" class="btn btn-success dropdown-toggle"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="#">10 meters</a></li>
+                <li><a href="#">20 meters</a></li>
+                <li><a href="#">30 meters</a></li>
+              </ul>
+            </div>
+        <!-- End of the floors-->
+
+        <!-- Start of the Distance-->
+        <div class="btn-group btn-space">
+              <button type="button" class="btn btn-default">Floors</button>
+              <button type="button" data-toggle="dropdown" class="btn btn-success dropdown-toggle"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </ul>
+            </div>
+        <!-- End of the Distance-->
+
+            </div>
+
+      <div class="form-group">
+          <button type="button" data-dismiss="modal" class="btn btn-primary pull-right">New Pick-Up</button>
+          <button type="button" data-dismiss="modal" class="btn btn-primary pull-right">New Drop-Off</button>
+     <br>
+
+      </div>
+
+  </div>
+    <!--job details modal ends here-->
+  <div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn btn-default md-close">Cancel</button>
+    <button type="button" data-dismiss="modal" class="btn btn-primary md-close">Submit</button>
+  </div>
+</div>
+</div>
+</div>
+
+<!--Start of the Date Modals-->
+<div id="form-bp2" tabindex="-1" role="dialog" class="modal fade colored-header">
+<div class="modal-dialog custom-width">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close"><i class="icon s7-close"></i></button>
+    <h3 class="modal-title">Form Modal</h3>
+  </div>
+  <div class="modal-body form">
+    <div class="form-group">
+              <label class="col-sm-3 control-label">Date of Delivery</label>
+                <div class="col-sm-9">
+                <div data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii" data-link-field="dtp_input1" class="input-group date datetimepicker col-md-6 col-xs-7">
+                  <input size="16" type="text" value="" readonly="" class="form-control col-md-9"><span class="input-group-addon btn btn-primary"><i class="icon-th s7-date"></i></span>
+                </div>
+              </div>
+    </div>
+      <br>
+      <div class="form-group">
+              <label class="col-sm-4 control-label">Basic Select</label>
+              <div class="btn-group btn-hspace">
+              <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Repeat<span class="caret"></span></button>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="#">Never</a></li>
+                <li><a href="#">Every Day</a></li>
+                <li><a href="#">Every Week</a></li>
+                  <li><a href="#">Every 2 Weeks</a></li>
+                  <li><a href="#">Every Month</a></li>
+                  <li><a href="#">Every Year</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Custom</a></li>
+              </ul>
+            </div>
+      </div>
+    <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
+  <div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn btn-default md-close">Cancel</button>
+    <button type="button" data-dismiss="modal" class="btn btn-primary md-close">Proceed</button>
+  </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <title>Amaretti</title>    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+  </head>
+  <div class="am-splash-screen">
+    <div class="am-wrapper2 am-login am-signup">
+      <div class="am-content">
+        <div class="main-content">
+          <div class="login-container sign-up">
+            <div class="panel panel-default">
+              <div class="panel-heading"><img src="assets/img/Moverspro-logo.png" alt="logo" width="200px" height="150px" class="logo-img"></div>
+              <div class="panel-body">
+                <form novalidate="" method="post" class="form-horizontal">
+                  <div class="sign-up-form">
+
+                    <!-- start of the sign up form-->
+
+                    <!--Business Name-->
+                    <div class="form-group">
+                      <div id="nick-handler" class="input-group"><span class="input-group-addon"><i class="icon s7-user"></i></span>
+                        <input ng-model="user.businessname" type="text" name="userBizName" required="" placeholder="Business Name" autocomplete="off" class="form-control">
+                      </div>
+                    </div>
+                    <!--Business Name-->
+
+                     <!--Address-->
+                    <div class="form-group row">
+                      <div class="col-xs-6">
+                          <div id="confirm-handler" class="input-group"><span class="input-group-addon"><i class="icon s7-map-marker"></i></span>
+                            <input name="userDoorNumber" ng-model="user.doornumber" type="text" required="" placeholder="Door Number" class="form-control">
+                          </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div id="password-handler" class="input-group"><span class="input-group-addon"><i class="icon s7-map-marker"></i></span>
+                          <input name="userAddress1" ng-model="user.address" type="text" placeholder="Address Line 1" required="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div id="confirm-handler" class="input-group"><span class="input-group-addon"><i class="icon s7-map-marker"></i></span>
+                          <input name="userPostcode" ng-model="user.postcode" type="text" required="" placeholder="Postcode" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div id="confirm-handler" class="input-group"><span class="input-group-addon"><i class="icon s7-map-marker"></i></span>
+                          <input name="userCity" ng-model="user.city" type="text" required="" placeholder="City" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <!--Address-->
+
+                    <!--Business Type-->
+                     <div class="form-group">
+                      <div class="col-sm-12">
+                        <select class="form-control" ng-model="user.businesstype">
+                            <option ng-repeat="option in bizType.availableOptions" ng-disabled="option.dis" value="{{option.name}}">{{option.name}}</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--Business Type-->
+
+                     <!-- first and last name -->
+                    <div class="form-group row">
+                      <div class="col-xs-6">
+                        <div id="password-handler" class="input-group"><span class="input-group-addon"><i class="icon s7-id"></i></span>
+                          <input name="userFirstname" ng-model="user.firstname" type="text" placeholder="First Name" required="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div id="confirm-handler" class="input-group"><span class="input-group-addon"><i class="icon s7-id"></i></span>
+                          <input name="userLastname" ng-model="user.lastname" type="text" required="" placeholder="Last Name " class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                      <!--first and last name-->
+
+                    <!--Mobile-->
+                    <div class="form-group">
+                      <div id="email-handler" class="input-group"><span class="input-group-addon"><i class="icon s7-phone"></i></span>
+                        <input name="userMobile" ng-model="user.mobile" type="text" name="text" required="" placeholder="Mobile" autocomplete="off" class="form-control">
+                      </div>
+                    </div>
+                    <!--Mobile-->
+
+                    <!--email-->
+                    <div class="form-group">
+                      <div id="email-handler" class="input-group"><span class="input-group-addon"><i class="icon s7-mail"></i></span>
+                        <input ng-model="user.email" type="email" name="userEmail" required="" placeholder="E-mail" autocomplete="off" class="form-control">
+                      </div>
+                    </div>
+                    <!--email-->
+
+                      <!--username-->
+                    <div class="form-group">
+                      <div id="nick-handler" class="input-group"><span class="input-group-addon"><i class="icon s7-user"></i></span>
+                        <input ng-model="user.username" type="text" name="userUsername" required="" placeholder="Username" autocomplete="off" class="form-control">
+                      </div>
+                    </div>
+                    <!--username-->
+
+                    <!--password-->
+                    <div class="form-group row">
+                      <div class="col-xs-6">
+                        <div id="password-handler" class="input-group"><span class="input-group-addon"><i class="icon s7-lock"></i></span>
+                          <input ng-model="user.password" name="userPassword" type="password" placeholder="Password" required="" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div id="confirm-handler" class="input-group"><span class="input-group-addon"><i class="icon s7-lock"></i></span>
+                          <input ng-model="user.password2" name="userPassword2" type="password" required="" placeholder="Confirm" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <!--password-->
+
+
+                    <!-- end of the sign up form-->
+
+                  </div>
+                  <p class="conditions">By creating an account, you agree with the <a href="#">Terms and Conditions</a>.</p>
+                  <p class="conditions"><a href="/login">Login</a>.</p>
+                  <button ng-click="register(user)" class="btn btn-block btn-primary btn-lg">Sign Up</button>
+                </form>
+              </div>
+            </div>
+            <div class="text-center out-links"><a href="#">© 2015 Your Company</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

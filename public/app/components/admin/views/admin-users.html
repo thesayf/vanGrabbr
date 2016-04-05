@@ -1,0 +1,90 @@
+<div class="am-content">
+        <div class="main-content">
+ <div class="row">
+            <div class="col-sm-12">
+              <div class="widget widget-fullwidth widget-small">
+                <div class="widget-head">
+                  <div class="title">Users</div>
+                </div>
+        
+                <div class="input-group col-md-4 col-md-offset-6">
+                          <span class="input-group-addon" id="basic-addon1">Find User</span>
+                          <input ng-model="searchText" type="text" class="form-control" placeholder="Enter User" aria-describedby="basic-addon1">
+                </div>
+                <table id="table1" class="table table-striped table-hover table-fw-widget">
+                  <thead>
+                    <tr>
+                      <th>Business Name</th>    
+                      <th>Type Of business</th>
+                      <th>User Name</th>
+                      <th>Number</th>
+                      <th>View more</th>
+                        <th>login</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="odd gradeX" ng-repeat="ud in users | filter:searchText">
+                      <td>{{ud.businessname}}</td>
+                      <td>{{ud.businesstype}}</td>
+                      <td>{{ud.username}}</td>
+                      <td class="center">{{ud.mobile}}</td>
+                      <td class="center"><button ng-click="displayOneUser(ud._id)" data-toggle="modal" data-target="#form-bp1" type="button" class="">View</button></td>
+                        <td class="center"><button>Login</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+
+<div id="form-bp1" tabindex="-1" role="dialog" class="modal fade colored-header">
+              <div class="modal-dialog custom-width">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close"><i class="icon s7-close"></i></button>
+                    <h3 class="modal-title">Set Dates</h3>
+                  </div>
+                  <div class="modal-body form">
+            <div class="form-group">
+              <div class="user-profile col-md-12 col-sm-12">
+                <div class=" info-block panel panel-default">
+                  <div class="panel-heading">
+                    <h4>Piping Project</h4>
+                  </div>
+                   <table class="no-border no-strip skills">
+                      <tbody class="no-border-x no-border-y">
+                        <tr>
+                          <td class="item">Username<span class="icon s7-user"></span></td>
+                          <td>{{username}}</td>
+                        </tr>
+                        <tr>
+                          <td class="item">Email<span class="icon s7-mail"></span></td>
+                          <td>{{email}}</td>
+                        </tr>
+                        <tr>
+                          <td class="item">Address<span class="icon s7-map-marker"></span></td>
+                          <td>{{address}} {{city}} {{postcode}}</td>
+                        </tr>
+                        <tr>
+                          <td class="item">Bank Account:<span class="icon s7-safe"></span></td>
+                          <td>{{bank}}.{{acc}}.{{sc}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                  </div>
+                    <br>
+                    <br>
+                    <br>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default md-close">Cancel</button>
+                    <button type="button" data-dismiss="modal" class="btn btn-primary md-close">Proceed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+</div>

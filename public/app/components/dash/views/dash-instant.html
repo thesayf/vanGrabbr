@@ -1,0 +1,85 @@
+ <div class="am-content">
+        <aside class="page-aside">
+          <div class="am-scroller nano">
+            <div class="nano-content">
+              <div class="content">
+                <div class="user-profile col-md-12 col-sm-12 no-pad-l">
+                <div class=" info-block panel panel-default">
+                    <table class="no-border no-strip skills">
+                      <tbody class="no-border-x no-border-y">
+                         <tr>
+                          <td class="item">Vehicle<span class="icon s7-car"></span></td>
+                          <td><button data-toggle="modal" data-target="#inv-fullWidth" type="button" class="btn btn-space btn-warning col-md-12 col-xs-12">Choose Vehicle</button></td>
+                        </tr>
+                        <tr>
+                          <td class="item">Route:<span class="icon s7-map-marker"></span></td>
+                          <td> <button data-toggle="modal" data-target="#form-bp1" type="button" class="btn btn-space btn-warning col-md-12 col-xs-12">Choose Route</button></td>
+                        </tr>
+                        <tr>
+                          <td class="item">Date & Time:<span class="icon s7-date"></span></td>
+                          <td><div class="input-group date datetimepicker col-md-12 col-xs-12">
+                          <input id="job-date-picker" ng-model="dashInstant.jobDate" size="16" type="text" value="" class="form-control">
+                          <!-- <span class="input-group-addon btn btn-primary">
+                              <i class="icon-th s7-date"></i> -->
+                          </span>
+                        </div></td>
+                        </tr>
+                        <tr>
+                          <td class="item">Note:<span class="icon s7-ticket"></span></td>
+                          <td> <button data-toggle="modal" data-target="#mod-err" type="button" class="btn btn-space btn-warning col-md-12 col-xs-12">Note for Driver?</button></td>
+                        </tr>
+                        <tr>
+                          <td class="item">Price Estimate:<span class="icon s7-credit"></span></td>
+                            <td class="text-center">
+                                <div ng-if="dashInstant.fuelPrice > 0" class="">
+                                    <strong><font size="6">£15</font>per hour</strong>
+                                    <div> + £{{dashInstant.fuelPrice}} Fuel</div>
+                                </div>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                    <button ng-click="bookInstantJob()" class="btn btn-danger btn-space btn-hspace col-md-12 col-xs-12">Book</button>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="main-content">
+          <!--+general-chart("classes", "title", "height", "id", "counter value", "counter desc", tools enabled (use true or false))-->
+        <div class="col-md-12">
+        <div id="map-canvas" style="width:100%; height:590px;"></div>
+        </div>
+        </div>
+      </div>
+
+<!-- Get fixed quote Modal Ends Here-->
+
+<div dash-van-type></div>
+<div dash-route-plan></div>
+
+<div id="mod-err" tabindex="-1" role="dialog" class="modal fade">
+      <div class="modal-dialog">
+        <div class="md-content">
+                      <div class="modal-header">
+                        <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close"><i class="icon s7-close"></i></button>
+                        <h3 class="modal-title">Driver Note</h3>
+                      </div>
+                      <div class="modal-body form">
+                        <div class="form-group">
+                          <label>Job Name</label>
+                          <input ng-model="dashInstant.jobName" type="name" placeholder="Job name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label>Your Note for Driver</label>
+                          <textarea ng-model="dashInstant.driverNote" class="form-control"></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-default md-close">Cancel</button>
+                        <button type="button" data-dismiss="modal" class="btn btn-primary md-close">Proceed</button>
+                      </div>
+                    </div>
+      </div>
+    </div>

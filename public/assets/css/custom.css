@@ -1,0 +1,50 @@
+.tc {text-align: center;}
+.tc {text-align: left;}
+.ib {display: inline-block;}
+.m-5 {margin: 5px}
+.bord {border: 1px solid #d7d7d7;}
+.bord-picked {border: 1px solid green;}
+.pad-5 {padding: 5px;}
+.has-error input::-webkit-input-placeholder {
+   	color: #a94442;
+}
+
+.has-error input:-moz-placeholder { /* Firefox 18- */
+   color: #a94442;
+}
+
+.has-error input::-moz-placeholder {  /* Firefox 19+ */
+   color: #a94442;
+}
+
+.has-error input:-ms-input-placeholder {
+   color: #a94442;
+}
+
+.error-placeholder {
+	color: #a94442 !important;
+}
+
+.success-placeholder {
+	color: #3c763d !important;
+}
+
+.has-success input::-webkit-input-placeholder {
+   	color: green;
+}
+
+.has-success input:-moz-placeholder { /* Firefox 18- */
+   color: green;
+}
+
+.has-success input::-moz-placeholder {  /* Firefox 19+ */
+   color: green;
+}
+
+.has-success input:-ms-input-placeholder {
+   color: green;
+}
+
+.no-pad-l{
+    padding-left: 0px !important;
+}

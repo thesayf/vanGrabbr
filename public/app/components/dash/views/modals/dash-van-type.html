@@ -1,0 +1,99 @@
+<!-- Get fixed quote Modal Ends Here-->
+
+<div id="inv-fullWidth" tabindex="-1" role="dialog" class="modal fade">
+    <div class="modal-dialog full-width">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--cancel button starts here-->
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+                <!--cancel button ends here-->
+            </div>
+            <div class="modal-body">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div data-van="0" class="panel panel-default panel-transparent panel-borders">
+                            <div class="panel-heading text-center">
+                                <div class="tools"></div><span class="title">Small Van</span>
+                            </div>
+                        <div class="panel-body">
+                            <div class="text-center">
+                            <img src="/assets/img/cdv.png" alt="...">
+                            </div>
+                            <br>
+                            <div class="text-center">
+                                <span class="badge badge-primary"><strong>849kg max.</strong> L178 x W155 x H124 cm</span>
+                                <button  ng-click="chooseVan(0, $event)" type="button" class="btn btn-primary btn-hspace">Choose Van</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                   <div class="col-md-3">
+                        <div data-van="1" class="panel panel-default panel-transparent panel-borders">
+                            <div class="panel-heading text-center">
+                                <div class="tools "></div><span class="title">Medium Van</span>
+                            </div>
+                        <div class="panel-body">
+                            <div class="text-center">
+                            <img src="/assets/img/swb.png" alt="...">
+                            </div>
+                            <br>
+                            <div class="text-center">
+                                <span class="badge badge-primary"><strong>1025kg max.</strong> L370 x W187 x H193 cm</span>
+                                <button  ng-click="chooseVan(1, $event)" type="button" class="btn btn-primary btn-hspace">Choose Van</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div data-van="2" class="panel panel-default panel-transparent panel-borders">
+                            <div class="panel-heading text-center">
+                                <div class="tools"></div><span class="title">Large Van</span>
+                            </div>
+                        <div class="panel-body">
+                            <div class="text-center">
+                            <img src="/assets/img/lwb.png" alt="...">
+                            </div>
+                            <br>
+                            <div class="text-center">
+                                <span class="badge badge-primary"><strong>1087kg max.</strong> L430 x W178 x H194 cm</span>
+                                <button  ng-click="chooseVan(2, $event)" type="button" class="btn btn-primary btn-hspace">Choose Van</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 van-choose">
+                        <div data-van="3" class="panel panel-default panel-transparent panel-borders">
+                            <div class="panel-heading text-center">
+                                <div class="tools"></div><span class="title">Jumbo Van</span>
+                            </div>
+                        <div class="panel-body">
+                            <div class="text-center">
+                            <img src="/assets/img/luton.png" alt="...">
+                            </div>
+                            <br>
+                            <div class="text-center">
+                                <span class="badge badge-primary"><strong>1013kg max.</strong> L411 x W196 x H218 cm</span>
+                                <button  ng-click="chooseVan(3, $event)" type="button" class="btn btn-primary btn-hspace">Choose Van</button>
+
+                                <!-- <div class="col-sm-12">
+                                    <div class="am-checkbox inline">
+                                      <input id="check6" type="checkbox">
+                                     <label for="check6">Do you need a Tailift?</label>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+                <span ng-if="dashInstant.vanType !== undefined" class="pull-left" ><h4>Chosen: {{dashInstant.vanType}}</h4></span>
+                <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+                <button type="button" data-dismiss="modal" class="btn btn-primary">Proceed</button>
+            </div>
+        </div>
+    </div>
+</div>
